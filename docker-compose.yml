@@ -6,7 +6,6 @@ services:
       - "8090:8080"
     environment:
       - ASPNETCORE_URLS=http://+:8080
-      - SmtpSettings__Password=TU_PASS_AQUI
     networks:
       - proxy_network
     restart: always
