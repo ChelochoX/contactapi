@@ -1,0 +1,16 @@
+services:
+  graciatech_contact_api:
+    build: .
+    container_name: graciatech_contact_api
+    ports:
+      - "8090:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - SmtpSettings__Password=TU_PASS_AQUI
+    networks:
+      - proxy_network
+    restart: always
+
+networks:
+  proxy_network:
+    external: true

@@ -1,0 +1,6 @@
+@GraciaTech.ContactApi_HostAddress = http://localhost:5103
+
+GET {{GraciaTech.ContactApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

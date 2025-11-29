@@ -1,0 +1,101 @@
+# ===========================================
+# 📁 .gitignore — GraciaTech.ContactApi (.NET 8)
+# Autor: César Lezcano — Gracia Tech
+# ===========================================
+
+# ---- DOTNET BUILD OUTPUT ----
+bin/
+obj/
+out/
+publish/
+Generated/
+
+# ---- VISUAL STUDIO / RIDER / VSCODE ----
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+# ---- LOGS ----
+*.log
+logs/
+Log/
+log/
+
+# ---- SISTEMA OPERATIVO ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- SEGURIDAD ----
+# ⚠️ JAMÁS subir contraseñas SMTP ni secretos en producción
+appsettings.Development.json
+appsettings.Local.json
+*.secrets.json
+
+# SECRETOS DE .NET USER SECRETS
+**/secrets.json
+
+# ---- DOCKER ----
+# Archivos generados automáticamente
+docker-compose.override.yml
+docker-compose*.backup
+*.pid
+
+# ---- NUGET PACKAGES ----
+*.nupkg
+packages/
+.nuget/
+
+# ---- TEMPORALES ----
+*.tmp
+*.bak
+*.cache
+*.swp
+*.lock
+*.orig
+
+# ---- PUBLICACIONES / DIST ----
+dist/
+wwwroot/
+
+# ---- RECURSOS COMPILADOS ----
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# ---- TEST RESULTS ----
+TestResults/
+.coverage
+.coveragexml
+*.coverage
+*.trx
+
+# ---- API SPECIFIC ----
+# No subir el certificados locales
+*.cer
+*.pem
+*.key
+
+# ---- IDE DE COMMIT / EDITORES ----
+.idea/
+*.iml
+
+# ---- LINUX / UBUNTU ----
+*.tar.gz
+*.tgz
+
+# ---- WINDOWS ----
+*.zip
+*.7z
+
+# ---- RIDER SPECIFIC ----
+.idea/
+.idea/**/
+
+# ---- OTHERS ----
+*.local
